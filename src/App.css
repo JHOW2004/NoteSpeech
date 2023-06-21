@@ -31,7 +31,7 @@
 }
 
 .background span:nth-child(0) {
-  color: #fbff00;
+  color: #0004ff;
   top: 35%;
   left: 79%;
   animation-duration: 381s;
@@ -40,7 +40,7 @@
   box-shadow: 58vmin 0 7.539190347040963vmin currentColor;
 }
 .background span:nth-child(1) {
-  color: #7000fa;
+  color: #fa0075;
   top: 92%;
   left: 19%;
   animation-duration: 318s;
@@ -49,7 +49,7 @@
   box-shadow: 58vmin 0 7.318738407340165vmin currentColor;
 }
 .background span:nth-child(2) {
-  color: #2091a7;
+  color: #03eeff;
   top: 42%;
   left: 51%;
   animation-duration: 343s;
@@ -58,7 +58,7 @@
   box-shadow: -58vmin 0 7.479240526726618vmin currentColor;
 }
 .background span:nth-child(3) {
-  color: #fbff00;
+  color: #0004ff;
   top: 63%;
   left: 91%;
   animation-duration: 93s;
@@ -67,7 +67,7 @@
   box-shadow: 58vmin 0 8.029096072819982vmin currentColor;
 }
 .background span:nth-child(4) {
-  color: #2091a7;
+  color: #03eeff;
   top: 82%;
   left: 68%;
   animation-duration: 107s;
@@ -76,7 +76,7 @@
   box-shadow: -58vmin 0 8.21897643058318vmin currentColor;
 }
 .background span:nth-child(5) {
-  color: #2091a7;
+  color: #03eeff;
   top: 21%;
   left: 78%;
   animation-duration: 365s;
@@ -85,7 +85,7 @@
   box-shadow: -58vmin 0 7.528668395415133vmin currentColor;
 }
 .background span:nth-child(6) {
-  color: #2091a7;
+  color: #03eeff;
   top: 13%;
   left: 69%;
   animation-duration: 69s;
@@ -94,7 +94,7 @@
   box-shadow: 58vmin 0 8.157182912454447vmin currentColor;
 }
 .background span:nth-child(7) {
-  color: #fbff00;
+  color: #0004ff;
   top: 37%;
   left: 39%;
   animation-duration: 208s;
@@ -112,7 +112,7 @@
   box-shadow: -58vmin 0 7.537157853948461vmin currentColor;
 }
 .background span:nth-child(9) {
-  color: #2091a7;
+  color: #03eeff;
   top: 96%;
   left: 72%;
   animation-duration: 340s;
@@ -121,7 +121,7 @@
   box-shadow: -58vmin 0 7.95572471885339vmin currentColor;
 }
 .background span:nth-child(10) {
-  color: #fbff00;
+  color: #0004ff;
   top: 14%;
   left: 18%;
   animation-duration: 259s;
@@ -130,7 +130,7 @@
   box-shadow: 58vmin 0 8.102080325631123vmin currentColor;
 }
 .background span:nth-child(11) {
-  color: #fbff00;
+  color: #0004ff;
   top: 8%;
   left: 5%;
   animation-duration: 407s;
@@ -139,7 +139,7 @@
   box-shadow: -58vmin 0 7.756099284413864vmin currentColor;
 }
 .background span:nth-child(12) {
-  color: #7000fa;
+  color: #ffffff;
   top: 27%;
   left: 27%;
   animation-duration: 282s;
@@ -148,7 +148,7 @@
   box-shadow: -58vmin 0 7.857038303856841vmin currentColor;
 }
 .background span:nth-child(13) {
-  color: #7000fa;
+  color: #00fabb;
   top: 26%;
   left: 76%;
   animation-duration: 337s;
@@ -166,7 +166,7 @@
   box-shadow: -58vmin 0 8.235823280735486vmin currentColor;
 }
 .background span:nth-child(15) {
-  color: #2091a7;
+  color: #03eeff;
   top: 8%;
   left: 77%;
   animation-duration: 10s;
@@ -175,7 +175,7 @@
   box-shadow: -58vmin 0 7.563346294197893vmin currentColor;
 }
 .background span:nth-child(16) {
-  color: #2091a7;
+  color: #03eeff;
   top: 20%;
   left: 64%;
   animation-duration: 111s;
@@ -193,7 +193,7 @@
   box-shadow: 58vmin 0 7.886234660697863vmin currentColor;
 }
 .background span:nth-child(18) {
-  color: #7000fa;
+  color: #3b3944;
   top: 9%;
   left: 89%;
   animation-duration: 50s;
@@ -229,7 +229,7 @@
   box-shadow: -58vmin 0 7.431034816507419vmin currentColor;
 }
 .background span:nth-child(22) {
-  color: #2091a7;
+  color: #03eeff;
   top: 97%;
   left: 6%;
   animation-duration: 207s;
@@ -247,7 +247,7 @@
   box-shadow: 58vmin 0 7.5614220342173795vmin currentColor;
 }
 .background span:nth-child(24) {
-  color: #fbff00;
+  color: #0004ff;
   top: 18%;
   left: 36%;
   animation-duration: 363s;
@@ -256,7 +256,7 @@
   box-shadow: -58vmin 0 7.881978651139763vmin currentColor;
 }
 .background span:nth-child(25) {
-  color: #2091a7;
+  color: #03eeff;
   top: 30%;
   left: 75%;
   animation-duration: 387s;
@@ -283,7 +283,7 @@
   box-shadow: -58vmin 0 7.615404782534884vmin currentColor;
 }
 .background span:nth-child(28) {
-  color: #fbff00;
+  color: #0004ff;
   top: 31%;
   left: 30%;
   animation-duration: 217s;
@@ -305,8 +305,8 @@
   color: #000;
   bottom: 0;
   margin: 23px;
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   border: none;
   box-shadow: rgba(255, 255, 255, 0.493) 0px 10px 50px -7px inset,
@@ -462,7 +462,7 @@
   opacity: 1;
   background-color: transparent;
   bottom: 0;
-  margin: 23px;
+  margin-bottom: 23px;
   border: none;
 }
 
@@ -547,3 +547,9 @@
   color: rgba(0, 0, 0, 0.65);
   transform: translateY(0);
  }
+
+ .total {
+  max-width: 100vh;
+  max-height: 100vh;
+}
+ 

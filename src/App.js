@@ -19,99 +19,102 @@ const App = () => {
     return <span>Browser {`doesn't`} support speech recognition.</span>;
   }
 
-  
-  function copiarTexto () {
-    let textoCopiado = document.getElementById("conteudo")
+  function copiarTexto() {
+    let textoCopiado = document.getElementById("conteudo");
     textoCopiado.select();
-    document.execCommand("copy")
+    document.execCommand("copy");
   }
 
   return (
     <>
-      <div className="background">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
+      <div className="total">
+        <div className="background">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
 
-        <div className="container">
-          <div className="aviso">
-            {listening ? "🔴" : <button id="bottone5" onClick={copiarTexto}>Copy</button>}
+          <div className="container">
+            <div className="aviso">
+              {listening ? (
+                "🔴"
+              ) : (
+                <button id="bottone5" onClick={copiarTexto}>
+                  Copy
+                </button>
+              )}
+            </div>
+
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/enviodetareas-58e5d.appspot.com/o/Note%20Speech%202.png?alt=media&token=804e3e5f-ad1a-4505-9798-45bf78242622"
+              width="100"
+              height="100"
+              style={{
+                position: "absolute",
+                top: 0,
+                right: 0,
+                marginTop: 0,
+                marginRight: 12,
+              }}
+            />
+
+            {listening ? (
+              <button
+                onTouchEnd={SpeechRecognition.stopListening}
+                onMouseUp={SpeechRecognition.stopListening}
+                className="buttom2"
+              >
+                <ul class="wave-menu">
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </button>
+            ) : (
+              <button
+                onTouchStart={startListening}
+                onMouseDown={startListening}
+                className="buttom"
+              >
+                <Icon
+                  icon="game-icons:old-microphone"
+                  color="white"
+                  width="60"
+                  height="60"
+                />
+              </button>
+            )}
+
+            <textarea
+              className="input"
+              name="text"
+              rows="15"
+              value={transcript}
+              id="conteudo"
+              placeholder="Aqui será escrito o conteudo..."
+            ></textarea>
           </div>
-
-          <img
-            src="https://firebasestorage.googleapis.com/v0/b/enviodetareas-58e5d.appspot.com/o/Note%20Speech.png?alt=media&token=b0b956ad-da77-4e72-9b7e-153571f11265"
-            width="120"
-            height="120"
-            style={{
-              position: "absolute",
-              top: 0,
-              right: 0,
-              marginTop: -5,
-              marginRight: 20,
-            }}
-          />
-
-          {listening ? (
-            <button
-              onTouchStart={startListening}
-              onMouseDown={startListening}
-              onTouchEnd={SpeechRecognition.stopListening}
-              onMouseUp={SpeechRecognition.stopListening}
-              className="buttom2"
-            >
-              <ul class="wave-menu">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-              </ul>
-            </button>
-          ) : (
-            <button
-              onTouchStart={startListening}
-              onMouseDown={startListening}
-              onTouchEnd={SpeechRecognition.stopListening}
-              onMouseUp={SpeechRecognition.stopListening}
-              className="buttom"
-            >
-              <Icon
-                icon="game-icons:old-microphone"
-                color="white"
-                width="60"
-                height="60"
-              />
-            </button>
-          )}
-
-          <textarea
-            className="input"
-            name="text"
-            rows="15"
-            value={transcript}
-            id="conteudo"
-            placeholder="Aqui será escrito o conteudo..."
-          ></textarea>
         </div>
       </div>
     </>
