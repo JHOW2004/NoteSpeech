@@ -305,8 +305,8 @@
   color: #000;
   bottom: 0;
   margin: 80px;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   border: none;
   box-shadow: rgba(255, 255, 255, 0.493) 0px 10px 50px -7px inset,
@@ -462,7 +462,7 @@
   opacity: 1;
   background-color: transparent;
   bottom: 0;
-  margin-bottom: 70px;
+  margin-bottom: 90px;
   border: none;
 }
 
