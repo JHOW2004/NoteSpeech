@@ -76,6 +76,8 @@ const App = () => {
               <button
                 onTouchEnd={SpeechRecognition.stopListening}
                 onMouseUp={SpeechRecognition.stopListening}
+                onTouchStart={startListening}
+                onMouseDown={startListening}
                 className="buttom2"
               >
                 <ul class="wave-menu">
@@ -95,6 +97,8 @@ const App = () => {
               <button
                 onTouchStart={startListening}
                 onMouseDown={startListening}
+                onTouchEnd={SpeechRecognition.stopListening}
+                onMouseUp={SpeechRecognition.stopListening}
                 className="buttom"
               >
                 <Icon
