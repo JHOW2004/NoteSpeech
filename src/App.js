@@ -1,19 +1,17 @@
 import "./App.css";
 import { Icon } from "@iconify/react";
 import { createSpeechlySpeechRecognition } from "@speechly/speech-recognition-polyfill";
-import SpeechRecognition, {
-  useSpeechRecognition,
-} from "react-speech-recognition";
+import SpeechRecognition, {useSpeechRecognition,} from "react-speech-recognition";
+import Loading from "./loading";
+
 
 const appId = "ac494077-4412-4f96-9670-bf44934e94f0";
 const SpeechlySpeechRecognition = createSpeechlySpeechRecognition(appId);
 SpeechRecognition.applyPolyfill(SpeechlySpeechRecognition);
 
 const App = () => {
-  const { transcript, listening, browserSupportsSpeechRecognition } =
-    useSpeechRecognition();
-  const startListening = () =>
-    SpeechRecognition.startListening({ continuous: true });
+  const { transcript, listening, browserSupportsSpeechRecognition } = useSpeechRecognition();
+  const startListening = () => SpeechRecognition.startListening({ continuous: true });
 
   if (!browserSupportsSpeechRecognition) {
     return <span>Browser {`doesn't`} support speech recognition.</span>;
@@ -24,6 +22,8 @@ const App = () => {
     textoCopiado.select();
     document.execCommand("copy");
   }
+
+  const img = "https://firebasestorage.googleapis.com/v0/b/enviodetareas-58e5d.appspot.com/o/Note%20Speech%202.png?alt=media&token=804e3e5f-ad1a-4505-9798-45bf78242622";
 
   return (
     <>
@@ -59,45 +59,14 @@ const App = () => {
               )}
             </div>
 
-            <img
-              src="https://firebasestorage.googleapis.com/v0/b/enviodetareas-58e5d.appspot.com/o/Note%20Speech%202.png?alt=media&token=804e3e5f-ad1a-4505-9798-45bf78242622"
-              width="100"
-              height="100"
-              style={{
-                position: "absolute",
-                top: 0,
-                right: 0,
-                marginTop: 0,
-                marginRight: 12,
-              }}
-            />
+            <img src={img} style={{position: "absolute", top: 0, right: 0, marginTop: 0, marginRight: 12, width:100, height:100 }}/>
 
             {listening ? (
-              <button
-              onClick={SpeechRecognition.stopListening}
-                
-                className="buttom2"
-              >
-                <ul class="wave-menu">
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                </ul>
+              <button onClick={SpeechRecognition.stopListening} className="buttom2">
+                <Loading/>
               </button>
             ) : (
-              <button
-                onClick={startListening}
-                
-
-                className="buttom"
-              >
+              <button onClick={startListening} className="buttom">
                 <Icon
                   icon="game-icons:old-microphone"
                   color="white"
