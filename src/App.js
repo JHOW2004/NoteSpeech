@@ -74,8 +74,8 @@ const App = () => {
 
             {listening ? (
               <button
-                onTouchEnd={SpeechRecognition.stopListening}
-
+              onClick={SpeechRecognition.stopListening}
+                
                 className="buttom2"
               >
                 <ul class="wave-menu">
@@ -93,9 +93,9 @@ const App = () => {
               </button>
             ) : (
               <button
-                onTouchStart={startListening}
-               
-              
+                onClick={startListening}
+                
+
                 className="buttom"
               >
                 <Icon
