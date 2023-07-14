@@ -59,7 +59,7 @@ const App = () => {
               )}
             </div>
 
-            <img src={img} style={{position: "absolute", top: 0, right: 0, marginTop: 0, marginRight: 12, width:100, height:100 }}/>
+            <img src={img} style={{position: "absolute", top: 0, right: 0, marginTop: 0, marginRight: 12, width:100, height:100 }} alt=""/>
 
             {listening ? (
               <button onClick={SpeechRecognition.stopListening} className="buttom2">
