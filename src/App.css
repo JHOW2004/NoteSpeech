@@ -84,7 +84,6 @@ body {
 .input {
   width: 800px;
   height: 335px;
-
   color: #fff;
   font-size: 15px;
   background: rgba( 255, 255, 255, 0.2 );
@@ -94,7 +93,7 @@ body {
   border-radius: 10px;
   border: 1px solid rgba( 255, 255, 255, 0.18 );
   resize: none;
-  margin-top: 110px;
+  margin-top: 150px;
   margin-left: 5%;
   margin-right: 5%;
   padding: 30px;
