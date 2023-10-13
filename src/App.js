@@ -29,25 +29,7 @@ const App = () => {
     <>
       <div className="total">
         <div className="background">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-
+         <div className="bg"></div>
           <div className="container">
             <div className="aviso">
               {listening ? (
